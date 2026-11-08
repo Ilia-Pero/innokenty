@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Иннокентий — бот-стенографист встреч</title>
+<meta name="description" content="Telegram-бот расшифровывает записи встреч и присылает участникам договорённости, сроки, саммари и полный текст.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Иннокентий — бот-стенографист встреч</h1>
+<p class="lead">Внутренний Telegram-бот команды Продюсерского центра ТССС. Он расшифровывает запись рабочей встречи и присылает участникам договорённости со сроками, саммари и полный текст разговора.</p>
+
+<h2>Что делает бот</h2>
+<ul>
+<li>Берёт запись из облака Zoom или получает её от организатора файлом либо ссылкой на Яндекс Диск или Google Drive.</li>
+<li>Распознаёт речь и различает говорящих по голосу.</li>
+<li>Присылает в Telegram договорённости: что решили, кто отвечает, какой срок.</li>
+<li>Прикладывает файл Word с итогами и дословной расшифровкой.</li>
+</ul>
+
+<h2>Сохранение на Google Диск</h2>
+<p>Получатель может подключить свой Google Диск командой <code>/drive</code>. После этого итоги встреч, которые бот присылает этому человеку, появляются и на его диске: отдельный документ Google на каждую встречу в папке «Расшифровки встреч».</p>
+<p>Бот запрашивает одно право, <code>drive.file</code>. Он видит на диске только созданные им папку и документы, а другие файлы ему недоступны. Отключить диск можно той же командой в любой момент.</p>
+
+<h2>Кто пользуется</h2>
+<p>Бот работает только для команды Продюсерского центра ТССС, посторонним он не предлагается. Подключать встречи и присылать записи могут организаторы, которых назначает администратор. Остальные получают итоги встреч, в которые их добавили, в чате с <a href="https://t.me/ainnokenty_bot">@ainnokenty_bot</a>.</p>
+
+<h2>Данные и контакты</h2>
+<p>Какие данные обрабатывает бот, описано в <a href="privacy.html">политике конфиденциальности</a>.</p>
+<p>Контакт: Продюсерский центр ТССС, <a href="mailto:tsss.success@gmail.com">tsss.success@gmail.com</a>.</p>
+
+<h2 lang="en">About (English)</h2>
+<p lang="en">Innokenty is an internal Telegram bot of the TSSS Production Center team. It is not offered to outside users. It transcribes meeting recordings and sends participants the agreements, deadlines, a summary and the full transcript. A recipient can connect their own Google Drive with the <code>/drive</code> command, and the bot then saves each result they receive as a Google Doc in a folder it creates. The bot requests only the <code>drive.file</code> scope, so it can access only the files it created. See the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+<footer><a href="privacy.html">Политика конфиденциальности</a></footer>
+</body>
+</html>
