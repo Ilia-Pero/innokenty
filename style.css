@@ -21,3 +21,13 @@ code { font-size: 0.9em; overflow-wrap: anywhere; }
 table { width: 100%; border-collapse: collapse; font-size: 15px; }
 th, td { padding: 8px 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
 th { background: var(--fill); }
+/* на телефоне таблица — карточками: три колонки по 110 px не читаются */
+@media (max-width: 560px) {
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { display: none; }
+  tr { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  td { padding: 2px 0; border: 0; }
+  td::before { content: attr(data-label); display: block; font-size: 13px; color: var(--muted); }
+  td:first-child { font-weight: 600; }
+  td:first-child::before { display: none; }
+}
